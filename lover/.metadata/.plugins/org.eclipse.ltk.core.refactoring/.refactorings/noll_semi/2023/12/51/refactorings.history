@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 packages to &apos;final/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;noll_semi&apos;&#x0D;&#x0A;- Destination element: &apos;final/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     noll_semi/src/main/java/njdbc&#x0D;&#x0A;     noll_semi/src/main/java/member&#x0D;&#x0A;     noll_semi/src/main/java/board&#x0D;&#x0A;     noll_semi/src/main/java/controller&#x0D;&#x0A;     noll_semi/src/main/java/reply" description="Copy packages" destination="=final/src\/main\/java" element1="/src\/main\/java&lt;njdbc" element2="/src\/main\/java&lt;member" element3="/src\/main\/java&lt;board" element4="/src\/main\/java&lt;controller" element5="/src\/main\/java&lt;reply" flags="589830" fragments="5" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702888737566" version="1.0"/>
+</session>

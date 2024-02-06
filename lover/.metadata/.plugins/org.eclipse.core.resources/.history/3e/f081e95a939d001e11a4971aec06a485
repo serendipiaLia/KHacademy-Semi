@@ -1,0 +1,253 @@
+@charset "UTF-8";
+*{margin:10px; padding: 0;}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DDDDCC;
+}
+
+.blog-post {
+    width: 800px;
+    margin: 50px auto;
+    padding: 60px 40px 0 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff; /* 배경색 추가 */
+}
+
+.blog-post h1 {
+    color: #333;
+}
+
+.td1{
+   padding-bottom: 10px;
+   color: #666;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.content {
+    padding: 20px; /* 내용과 컨테이너의 경계 사이에 여백을 추가 */
+    line-height: 2; /* 줄 간격을 1.6으로 설정, 이는 글자 크기의 1.6배 */
+    text-align: justify; /* 양쪽 정렬로 글자를 깔끔하게 정렬 */
+    font-size: 1em; /* 기본 글자 크기 설정, 필요에 따라 조정 가능 */
+    border: 1px solid rgb(217, 217, 217);
+    /* 기타 스타일 속성 */
+}
+.comments-section {
+   margin-top: 40px;
+}
+.comment-form{
+    display: flex;
+    flex-direction: column; /* 버튼을 텍스트 영역 아래로 배치 */
+}
+.comments-section h2 {
+    color: #333;
+}
+
+
+#comments {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* 하단 테두리 추가 */
+}
+
+.comment-form textarea {
+    width: 100%; /* 너비를 부모 요소에 맞춤 */
+    padding: 10px;
+    border: 1px solid #605c5c;
+    border-radius: 4px;
+    margin-bottom: 10px; /* 버튼과의 간격 */
+}
+
+/* 마지막 댓글에는 하단 테두리가 없도록 설정 */
+#comments .comment:last-child {
+    border-bottom: 1px #333;
+}
+
+#submitComment {
+    width: auto; /* 버튼의 너비를 내용에 맞게 조절 */
+    align-self: flex-end; /* 버튼을 오른쪽으로 정렬 */
+    padding: 10px 20px; /* 버튼 패딩 조절 */
+}
+/* article */
+header {
+  height: 60px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-of-article {
+  display: flex;
+  align-items: center;
+}
+.img-profile {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #fafafa;
+  border-radius: 100%;
+}
+.main-image img {
+  width: 812px;
+}
+.main-id {
+  margin-left: 14px;
+}
+.icon-more {
+  justify-self: end;
+}
+.icons-react {
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon-react {
+  width: 24px;
+  height: 24px;
+}
+.icons-left {
+  display: flex;
+  align-items: center;
+}
+.icons-left .icon-react {
+  margin-right: 12px;
+}
+/* article text data */
+.reaction {
+  padding: 0 16px;
+}
+.liked-people {
+  display: flex;
+  align-items: center;
+  height: 18px;
+  margin: 2px 0 8px 0;
+}
+.liked-people img {
+  display: inline-block;
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fafafa;
+}
+.liked-people p {
+  display: inline-block;
+  color: #262626;
+  font-size: 14px;
+}
+.description {
+  display: flex;
+  align-items: center;
+  height: 18px;
+}
+span.at-tag {
+  color: #00376B;
+}
+ul.comments {
+}
+ul.comments li {
+  height: 21px;
+  display: flex;
+  justify-content: space-between;
+  color: #262626;
+  font-size: 14px;
+}
+img.comment-heart {
+  width: 12px;
+  height: 12px;
+}
+div.time-log {
+  margin-bottom: 8px;
+}
+div.time-log span {
+  height: 18px;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.hl {
+  border-top: 1px solid #DBDBDB;
+  width: 812px;
+}
+
+/* 반응형 쿼리  */
+
+@media screen and (max-width: 600px) {
+    .blog-post {
+        width: 100%;  /*화면이 작을 때 너비를 100%로 조정 */
+        padding: 10px;  /*패딩 조정 */
+    }
+
+    .blog-post h1 {
+        font-size: 1.5em; /* 작은 화면에서의 제목 폰트 크기 조정 */
+    }
+
+    .content, .comments-section {
+        text-align: left; /* 작은 화면에서의 텍스트 정렬 조정 */
+    }
+
+    .comment-form textarea, #submitComment {
+        width: 100%;  /*작은 화면에서의 입력 필드와 버튼 너비 조정 */
+    }
+}
+/*버튼 디자인*/
+
+.btn-custom {
+  padding: 5px 10px;
+  margin: 10px 2px 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.75em;
+}
+
+.btn-custom.edit {
+  background-color: #9E9E90;
+  color: white;
+}
+
+.btn-custom.delete {
+  background-color: #9E9E90;
+  color: white;
+}
+.content-divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.hit{
+   margin-left: 10px;
+}
+
+/* 아이디 조회수 날짜 변경 css */
+.date {
+    display: inline-block;
+    margin-right: 40px; /* ID와 조회수 사이 간격 */
+}
+
+.hit {
+    display: inline-block;
+    margin-right: 50px; /* 조회수와 작성일 사이 간격 */
+}
+
+.reviewCreatedate {
+    display: inline-block;
+    float: right;
+    font-size: 0.75em;
+}
+
+
+button{
+   padding: 5px 10px;
+   margin: 10px 2px 5px 0;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 0.65em;
+   color: rgb(128, 128, 128);
+}

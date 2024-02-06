@@ -1,0 +1,84 @@
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
+
+body, html {
+   background: #000000;
+   overflow: hidden;
+   margin: 0;
+}
+#home {
+   padding: 240px 0 50px;
+   margin: 0;
+   background: #111 url("../images/copy1.jpg");
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+   text-align: center;
+   height: 100vh;
+}
+img#logo{
+   max-width: 80px; /* 최대 너비 설정 */
+   position: absolute;
+   top: 0.53%;
+   left: 1.05%; /* 상대적인 왼쪽 위치 값 사용 */
+}
+img#login_logo{
+   max-width: 75px; /* 최대 너비 설정 */
+   position: absolute;
+   top: 2.23%;
+   right: 2.34%; /* 상대적인 오른쪽 위치 값 사용 */
+}
+#caption{
+   position: relative;
+   top: -110px; /* -140px */
+}
+#caption h1{
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 100;
+   font-size: 42px;
+   margin-bottom: 18px;
+   line-height: 48px;
+   color: #eee;
+   position: relative;
+   text-transform: initial;
+   z-index: 2;
+}
+#caption p{
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   position: relative;
+   max-width: 400px;
+   margin: 0 auto 30px;
+   z-index: 2;
+   color: #eee;
+}
+.center-button {
+   padding: 10px 0;
+   text-align: center;
+}
+a.default-button {
+   color: #fff;
+   font-size: 12px;
+   /* font-family: "Open Sans", sans-serif; */
+   font-weight: 600;
+   padding: 12px 24px;
+   /* background: #954129; */
+   background: rgb(163, 96, 67);
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   text-decoration: none;
+   opacity: 0.95;
+   transition: 0.3s;
+   border-radius: 20px;
+}
+a.default-button:hover {
+   background: transparent;
+   color: black;
+   background-color: rgb(247, 245, 200);
+   transform: scale(1.05);
+}
+a.default-button::before {
+     transform: scaleX(1);
+}

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #ddddcc;
+}
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: #143a2e;
+    font-size: 30px;
+}
+h5{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.back {
+    box-sizing: border-box; /* content-box 대신 border-box로 설정 */
+    width: 60%;
+    height: 1000px;
+    margin: 30px auto 0;
+    background-color: #999999;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 1;
+}
+.img{
+    text-align: center;
+    height: auto;
+    background-color: #143a2e;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    background-color: #afafa2;
+    display: inline;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+.container b{
+    color: rgb(150, 254, 254);
+}
+
+.btn-apply {
+    position: absolute;
+    bottom: -950px; /* 원하는 아래 위치로 조절 */
+    left: 50%; /* 화면 가로 중앙에 위치하도록 설정 */
+    transform: translateX(-50%); /* 가로 중앙 정렬을 위한 보정 */
+    padding: 10px;
+    background-color: #afafa2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 10px; /* 원하는 간격으로 조절 */
+}
+
+.card-description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.see {
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.text {
+    font-size: 10px;
+}
+.box {
+    background-color: #afafa2;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: table; /* 가운데 정렬을 위해 테이블 디스플레이 사용 */
+    margin-left: auto; /* 가운데 정렬을 위해 좌우 마진을 자동으로 설정 */
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.box li {
+    margin-top: 15px;
+    font-size: 20px;
+    color: white;
+}
+.box li span {
+    border: 1px solid black;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+/* 태블릿 크기에 대한 스타일 */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .btn-apply {
+        font-size: 18px;
+        
+    }
+	
+	
+	
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-description {
+        font-size: 18px;
+    }
+
+    .see, .text {
+        font-size: 12px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+}
+
+/* 모바일 크기에 대한 스타일 */
+@media (max-width: 576px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .btn-apply {
+        position: static; /* position 속성을 static으로 변경 */
+        margin-top: 15px;
+        margin-left: 15px; /* 원하는 간격으로 조절 */
+        width: 40%; /* 버튼을 가로폭 100%로 설정 */
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-description {
+        font-size: 16px;
+    }
+
+    .see, .text {
+        font-size: 10px;
+    }
+
+    .box {
+        padding: 10px;
+    }
+    .container {
+        flex-direction: column; /* 세로 방향으로 정렬 */
+    }
+}
+

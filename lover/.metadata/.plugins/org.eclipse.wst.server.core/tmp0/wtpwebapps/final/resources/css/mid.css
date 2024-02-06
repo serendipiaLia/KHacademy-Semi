@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+/* 테블릿에 대한 스타일 */
+@media (min-width: 426px) and (max-width: 1024px) {
+  #event_link {
+    width: 100%;
+    padding: 10px 20px;
+    left: 0;
+    border-radius: 0;
+    /* 테블릿에 맞는 다른 스타일 */
+        
+   .map_section {
+	width: 100%;
+    padding: 10px 20px;
+    left: 0;
+    border-radius: 0;
+	}
+    
+
+ 	 	}
+	}
+
+/* 핸드폰에 대한 스타일 */
+@media (max-width: 425px) {
+  #event_link {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+    border-radius: 0;
+    /* 핸드폰에 맞는 다른 스타일 */
+  }
+}

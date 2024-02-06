@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* 글쓰기 폼 css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ddddcc;
+}
+
+h2{
+  padding:  0 0 50px 10px;
+  margin: 0 auto;
+}
+
+.email-form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#div{
+  width: 80%;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+#title, #place, #ad{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  width: 600px;
+}
+
+#title:focus,
+#place:focus,
+#ad:focus{
+  outline: none;
+  border-bottom: 2px solid #667788;
+}
+
+/* 숨김 처리 (투명도를 이용하여 보이지 않도록 함) */
+#attachment {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* 대체 스타일 (기존 버튼을 대체할 스타일) */ 
+#file{
+   width: 640px;
+}
+
+.custom-file-input {
+  background-color: #667788;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 10px 10px 10px;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 400px;
+}
+
+
+textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 80%;
+  height: 400px;
+  
+}
+
+#btn{
+  display: flex;
+  justify-content: center;
+}
+
+#btn2{
+  background-color: #667788;
+  font-size: 16px;
+  color: #fff;
+  width: 70px;
+  height: 45px;
+  margin-left: 10px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #667799;
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+    .title {
+      outline: none;
+      border-bottom: 2px solid #667788;
+      width: 100%;
+    }
+
+    #file {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    #title, #place, #ad{
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .custom-file-input {
+      margin-right: 0;
+      margin-left: 8%;
+      width: 28%;
+    }
+
+    #btn {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #btn2 {
+      background-color: #667788;
+      font-size: 16px;
+      color: #fff;
+      width: 70px;
+      height: 45px;
+      margin-left: 10px;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .email-form-container {
+      max-width: 78%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media (max-width: 500px){
+    .title {
+      outline: none;
+      border-bottom: 2px solid #667788;
+      width: 100%;
+    }
+
+    #file {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    #title, #place, #ad{
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .custom-file-input {
+      margin-right: 0;
+      margin-left: 8%;
+      width: 28%;
+    }
+
+    #btn {
+      flex-direction: row; /* 수평으로 정렬하도록 변경 */
+      justify-content: center; /* 가운데 정렬 */
+      align-items: center; /* 가운데 정렬 */
+    }
+
+    #btn2 {
+      background-color: #667788;
+      font-size: 16px;
+      color: #fff;
+      width: 70px;
+      height: 45px;
+      margin-left: 10px;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .email-form-container {
+      max-width: 78%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}

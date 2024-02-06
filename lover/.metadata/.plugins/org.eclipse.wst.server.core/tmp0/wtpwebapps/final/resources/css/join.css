@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
+
+html{
+   background-color: #ddddcc;
+}
+
+/* 회원가입 폼 스타일 */
+
+#input-container {
+    position: relative;
+}
+
+.success-message {
+	font-size: 12px;
+    position: absolute;
+    top: 30px;
+    font-family: Noto Sans KR;
+}
+
+.error-message {
+    font-size: 12px;
+    font-family: Noto Sans KR;
+}
+
+#signupForm {
+    height: 100px;
+    margin: 0 auto; /* 중앙 정렬 */
+    margin-bottom: 10px;
+    padding: 1px 40px 40px 40px; /* 위, 오른쪽, 아래, 왼쪽 순서로 패딩 값을 지정 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 18px;
+    z-index: 1;
+    width: 540px;
+    height: 780px;
+    transition: opacity 0.3s ease-in-out;
+
+ }
+ 
+ #signupForm form {
+    padding: 1px 40px 40px 40px;
+ }
+ 
+ #signupForm h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+ }
+ 
+ #signupForm ul label {
+    display: block;
+    position: relative;
+    margin: 40px 150px;
+ }
+ 
+ #signupForm .label-txt {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #333;
+ }
+ #signupForm .label-box {
+   display: flex;
+   align-items: center;
+}
+ 
+ #signupForm .input {
+   width: 90%;
+   padding: 10px;
+   background: transparent;
+   border: none;
+   outline: none;
+   font-size: 14px;
+   color: #333;
+ }
+ #signupForm .input::placeholder{
+   color: #979797;
+   font-size: 13px;
+   font-family: Noto Sans KR;
+}
+ 
+ #signupForm .line-box {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #BCBCBC;
+ }
+ .line-box-id{
+    position: relative;
+    width: 80%;
+    height: 2px;
+    background: #BCBCBC;
+ }
+ 
+ #signupForm .line {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #747999;
+    transition: ease .6s;
+ }
+ 
+ #signupForm .input:focus + .line-box .line {
+    width: 100%;
+ }
+ 
+ #signupForm .label-active {
+    top: -3em;
+ }
+ 
+ #signupForm #signup_button_submit {
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 12px 24px;
+    background: #747999;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: ease .3s;
+    font-family: 'Noto Sans KR', sans-serif;
+ }
+ 
+ #signupForm #signup_button_submit:hover {
+    background: #c1cedf;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+ }
+ #back_button {
+   width: 100%;
+   margin-top: 10px;
+   display: inline-block;
+   padding: 12px 24px;
+   background: rgb(240,240,240);
+   color: rgb(137, 137, 137);
+   border: none;
+   outline: none;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: ease .3s;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+.button2{
+   padding: 6px;
+   width: 100px;
+   height: 40px;
+   margin-left: 60px;
+   background: rgb(240,240,240);
+   border: none;
+   border-radius: 3px;
+}
